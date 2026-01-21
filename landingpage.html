@@ -444,6 +444,7 @@ body{
 
 <div class="section">
   <div style="margin:8px 0 0 0;font-size:15px;">
+    
     <span class="ar-text">
       
       <h3 style="text-align: center;">الدار البيضاء، المحمدية، دار بوعزة، بوسكورة   📍</h3>
@@ -472,6 +473,7 @@ body{
     </div>
   </div>
   <div style="display:flex;justify-content:center;">
+    
     <button onclick="window.open('https://api.whatsapp.com/send?phone=212604203076&text=Je veux confirmer mon créneau maintenant !','_blank')" style="background:#25D366;border:none;border-radius:18px;padding:18px 32px;display:flex;align-items:center;gap:10px;cursor:pointer;color:#fff;font-weight:bold;font-size:20px;box-shadow:0 2px 8px rgba(25,118,210,0.12);margin:0 auto;">
       <img src="pngtree-whatsapp-icon-png-image_3584844-removebg-preview.png" alt="WhatsApp" style="width:28px;height:28px;">
       <span class="ar-text">أكد الموعد الآن!</span>
@@ -488,7 +490,7 @@ body{
 
     </span>
   </div>
-
+<style> </style>
 
 </div>
 <section class="stats-section">
@@ -777,8 +779,10 @@ counters.forEach(counter => {
         <img src="2.jpg" alt="Image 3" class="ba-thumb-img" onclick="showMainImage(2)">
         <img src="3.jpg" alt="Image 4" class="ba-thumb-img" onclick="showMainImage(3)">
         <img src="4.jpg" alt="Image 5" class="ba-thumb-img" onclick="showMainImage(4)">
-        <img src="6.png" alt="Image 6" class="ba-thumb-img" onclick="showMainImage(5)">
+        <img src="27.png" alt="Image 6" class="ba-thumb-img" onclick="showMainImage(5)">
         <img src="5.jpg" alt="Image 2" class="ba-thumb-img" onclick="showMainImage(6)">
+        
+        
       </div>
     </div>
     <div style="display:flex;justify-content:center;gap:8px;margin-top:18px;flex-wrap:wrap;">
@@ -788,8 +792,9 @@ counters.forEach(counter => {
       <img src="2.jpg" alt="Image 3" class="ba-thumb" onclick="showMainImage(2)">
       <img src="3.jpg" alt="Image 4" class="ba-thumb" onclick="showMainImage(3)">
       <img src="4.jpg" alt="Image 5" class="ba-thumb" onclick="showMainImage(4)">
-      <img src="6.png" alt="Image 6" class="ba-thumb" onclick="showMainImage(5)">
+      <img src="27.png" alt="Image 6" class="ba-thumb" onclick="showMainImage(5)">
       <img src="5.jpg" alt="Image 2" class="ba-thumb" onclick="showMainImage(6)">
+        <img src="27.png" alt="Image 7" class="ba-thumb" onclick="showMainImage(7)">
     </div>
   </div>
 </div>
@@ -835,20 +840,21 @@ const baImages = [
   "3.jpg",
   "4.jpg",
   "6.png",
-  "5.jpg"
+  "5.jpg",
+  "27.png"
 ];
 function showMainImage(idx) {
-  // Update main image
+
   const mainImg = document.querySelector('.ba-main-img');
   mainImg.src = baImages[idx];
-  // Update thumbnails active state
+
   document.querySelectorAll('.ba-thumb').forEach((el, i) => {
     if(i === idx) el.classList.add('active');
     else el.classList.remove('active');
   });
 }
 window.addEventListener('DOMContentLoaded', () => {
-  // Set first image as active
+
   showMainImage(0);
 });
 </script>
