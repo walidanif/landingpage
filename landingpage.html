@@ -16,11 +16,11 @@
 
 <style>
 body{
-  background-color: #1b263b;
+  background-color: #ffffff;
   margin:0;
   font-family: Tahoma, Arial;
-  background:#f4f6f8;
-  color:#222;
+  background:#ffffff;
+  color:#1b263b;
   line-height:1.9;
 }
 .container{
@@ -29,10 +29,11 @@ body{
   padding:20px;
 }
 
-/* HERO */
+
+
 .hero{
-  background:#1b263b;
-  color:#ffffff;
+  background:#ffffff;
+  color:#fff;
   padding:20px 30px;
  
   
@@ -43,6 +44,7 @@ body{
   gap:12px;
   text-align:center;
 }
+
 .hero-logo{
   margin-top: 10%;
   width:20%;
@@ -62,7 +64,6 @@ body{
 .hero h1{font-size:28px;margin-bottom:5px;}
 .hero p{font-size:16px;margin:0 0 10px 0;}
 
-/* BADGE */
 .badge{
   display:inline-block;
   background:#f1c40f;
@@ -376,6 +377,39 @@ body{
   text-align: center;
   border-radius: 8px;
 }
+.hero{
+  position: relative;
+  min-height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 60px;
+  gap: 60px;
+}
+
+
+/* background image */
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 1px; /* هنا الفراغ من جميع الجهات */
+
+  background-image: url("Desktop-background-blanc_page-0001.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  opacity: ;
+  z-index: 0;
+}
+
+
+
+.hero > *{
+  position: relative;
+  z-index: 1;
+}
+
 </style>
 </head>
 
@@ -396,16 +430,16 @@ body{
   target="_blank"
   title="تواصل معنا على واتساب"
 >
-  <img src="pngtree-whatsapp-icon-png-image_3584844-removebg-preview.png" alt="WhatsApp" style="width:35px;height:35px;">
+  <img src="webptree-whatsapp-icon-webp-image_3584844-removebg-preview.webp" alt="WhatsApp" style="width:35px;height:35px;">
 </a>
 
 <div class="container">
 
 
 <div class="hero">
-  <img sty src="photo_5992237543186959243_y-removebg-preview-removebg-preview.png" alt="" class="hero-logo"  ;>
+  <img sty src="photo_5992237543186959243_y-removebg-preview-removebg-preview.webp" alt="" class="hero-logo"  ;>
   <div class="hero-content">
-    <h1 style="font-size:140%; font-weight:bold; margin-bottom:5px;">
+    <h1 style="font-size:240%; font-weight:bold; margin-bottom:5px;">
       <span class="ar-text">غسيل سيارات متنقل بدون ماء ابتداءً من 60 درهم</span>
       <span class="fr-text" style="display:none;">Lavage auto à domicile sans eau à partir de 60 DH</span>
     </h1>
@@ -438,13 +472,6 @@ body{
 
       
     </div>
-  </div>
-  </div>
-
-
-<div class="section">
-  <div style="margin:8px 0 0 0;font-size:15px;">
-    
     <span class="ar-text">
       
       <h3 style="text-align: center;">الدار البيضاء، المحمدية، دار بوعزة، بوسكورة   📍</h3>
@@ -475,12 +502,12 @@ body{
   <div style="display:flex;justify-content:center;">
     
     <button onclick="window.open('https://api.whatsapp.com/send?phone=212604203076&text=Je veux confirmer mon créneau maintenant !','_blank')" style="background:#25D366;border:none;border-radius:18px;padding:18px 32px;display:flex;align-items:center;gap:10px;cursor:pointer;color:#fff;font-weight:bold;font-size:20px;box-shadow:0 2px 8px rgba(25,118,210,0.12);margin:0 auto;">
-      <img src="pngtree-whatsapp-icon-png-image_3584844-removebg-preview.png" alt="WhatsApp" style="width:28px;height:28px;">
+      <img src="webptree-whatsapp-icon-webp-image_3584844-removebg-preview.webp" alt="WhatsApp" style="width:28px;height:28px;">
       <span class="ar-text">أكد الموعد الآن!</span>
       <span class="fr-text" style="display:none;">Confirmer mon créneau maintenant !</span>
     </button>
   </div>
-    <div style="margin:8px 0 0 0;font-size:15px;">
+  <div style="margin:8px 0 0 0;font-size:15px;">
     <span class="ar-text">
       
       <h5 style="text-align: center;">أو معرفة الأوقات المتاحة</h5>
@@ -490,9 +517,233 @@ body{
 
     </span>
   </div>
-<style> </style>
+  </div>
+  
+  </div>
+  <br>
+
+ <div class="section">
+  <div style="margin:8px 0 0 0;font-size:15px;">
+    
+    >
+    
+ <style> .container{
+  position: relative;
+  z-index: 1;
+}
+
+/* الصورة فالخلف */
+.container::before{
+  content: "";
+  position: qz;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("Desktop-background-blanc_page-0001.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* الصورة كاملة */
+
+  opacity: 0.3; /* 30% */
+  z-index: -1;  /* تحت المحتوى */
+}
+</style>
 
 </div>
+
+ <br>
+
+<div class="section">
+  <h2 style=" text-align: center;">
+    <span class="ar-text">النتيجة قبل وبعد</span>
+    <span class="fr-text" style="display:none;">Avant et après</span>
+  </h2>
+  <p style="text-align: center;">
+    <span class="ar-text">الفرق واضح بالعين 👀</span>
+    <span class="fr-text" style="display:none;">La différence est visible à l'œil nu 👀</span>
+  </p>
+  <div class="slider-container">
+    <div class="slider-wrapper" id="sliderWrapper">
+      <div class="slider-item">
+        <img src="1.webp" alt="Image 1" class="ba-main-img" onclick="showMainImage(0)">
+        <img src="5.webp" alt="Image 2" class="ba-thumb-img" onclick="showMainImage(1)">
+        <img src="2.webp" alt="Image 3" class="ba-thumb-img" onclick="showMainImage(2)">
+        <img src="3.webp" alt="Image 4" class="ba-thumb-img" onclick="showMainImage(3)">
+        <img src="4.webp" alt="Image 5" class="ba-thumb-img" onclick="showMainImage(4)">
+        <img src="27.webp" alt="Image 6" class="ba-thumb-img" onclick="showMainImage(5)">
+        <img src="5.webp" alt="Image 2" class="ba-thumb-img" onclick="showMainImage(6)">
+        
+        
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:8px;margin-top:18px;flex-wrap:wrap;">
+
+      <img src="1.webp" alt="Image 1" class="ba-thumb" onclick="showMainImage(0)">
+      <img src="5.webp" alt="Image 2" class="ba-thumb" onclick="showMainImage(1)">
+      <img src="2.webp" alt="Image 3" class="ba-thumb" onclick="showMainImage(2)">
+      <img src="3.webp" alt="Image 4" class="ba-thumb" onclick="showMainImage(3)">
+      <img src="4.webp" alt="Image 5" class="ba-thumb" onclick="showMainImage(4)">
+      <img src="27.webp" alt="Image 6" class="ba-thumb" onclick="showMainImage(5)">
+      <img src="5.webp" alt="Image 2" class="ba-thumb" onclick="showMainImage(6)">
+        <img src="27.webp" alt="Image 7" class="ba-thumb" onclick="showMainImage(7)">
+    </div>
+  </div>
+</div>
+<div class="section" style="background-color: #fff;">
+
+<div class="section avis-section">
+   <span class="ar-text">  <h2 style="color: #f1c40f; background-color: ;">⭐ أراء العملاء</h2></span>
+      <span class="fr-text" style="display:none;">  <h2 style="color: #f1c40f;">⭐ Avis de nos clients</h2></span>
+
+
+
+  <div class="avis-wrapper">
+    <div class="avis-track">
+
+      
+      <div class="avis-card">
+        <img src="19.webp">
+        
+      </div>
+
+      <div class="avis-card">
+        <img src="20.webp">
+     
+      </div>
+
+      <div class="avis-card">
+        <img src="21.webp">
+      
+      </div>
+
+      <div class="avis-card">
+        <img src="22.webp">
+      
+      </div>
+
+      <div class="avis-card">
+        <img src="23.webp">
+      
+      </div>
+
+      <div class="avis-card">
+        <img src="24.webp">
+        
+      </div>
+
+    
+      <div class="avis-card">
+        <img src="25.webp">
+        
+      </div>
+
+      <div class="avis-card">
+        <img src="19.webp">
+   
+      </div>
+
+      <div class="avis-card">
+        <img src="20.webp">
+        
+      </div>
+
+      <div class="avis-card">
+        <img src="21.webp">
+     
+      </div>
+
+      <div class="avis-card">
+        <img src="22.webp">
+       
+      </div>
+
+      <div class="avis-card">
+        <img src="23.webp">
+       
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<style>.avis-section{
+  background:#ffffff;
+ 
+  color:#f1c40f;
+  text-align:center;
+}
+
+.avis-wrapper{
+  overflow:hidden;
+  max-width:1000px;
+  margin:auto;
+}
+
+.avis-track{
+  display:flex;
+  animation: scroll 40s linear infinite;
+}
+
+.avis-card{
+  width: calc(80% / 2);   
+  flex-shrink: 0;
+  padding:30px;
+  box-sizing:border-box;
+  text-align:center;
+}
+
+.avis-card img{
+  width:60%;
+
+ 
+  margin-bottom:10px;
+}
+
+.avis-card h4{
+  color:#ffd84d;
+  margin:10px 0 5px;
+}
+
+.avis-card p{
+  font-size:14px;
+  opacity:0.9;
+}
+
+
+@keyframes scroll{
+  from{
+    transform:translateX(50%);
+  }
+  to{
+    transform:translateX(-70%);
+  }
+}
+
+
+@media(max-width:768px){
+  .avis-card{
+    width:100%;
+  }
+}
+.avis-card{
+  overflow: visible;
+}
+
+.avis-card img{
+  width:60%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avis-card img:hover{
+  transform: scale(1.6);   /* ← هنا التكبير */
+  box-shadow: 0 100% 70% rgba(0,0,0,0.5);
+  z-index: 10000;
+}
+
+
+</style>
 <section class="stats-section">
   
   <div class="stat">
@@ -577,166 +828,11 @@ counters.forEach(counter => {
 });
 
 </script>
- <br>
-
-
-<div class="section avis-section">
-   <span class="ar-text">  <h2 style="color: #f1c40f;">⭐ أراء العملاء</h2></span>
-      <span class="fr-text" style="display:none;">  <h2 style="color: #f1c40f;">⭐ Avis de nos clients</h2></span>
-
-
-
-  <div class="avis-wrapper">
-    <div class="avis-track">
-
-      
-      <div class="avis-card">
-        <img src="19.jpg">
-        
-      </div>
-
-      <div class="avis-card">
-        <img src="20.png">
-     
-      </div>
-
-      <div class="avis-card">
-        <img src="21.png">
-      
-      </div>
-
-      <div class="avis-card">
-        <img src="22.png">
-      
-      </div>
-
-      <div class="avis-card">
-        <img src="23.png">
-      
-      </div>
-
-      <div class="avis-card">
-        <img src="24.png">
-        
-      </div>
-
-    
-      <div class="avis-card">
-        <img src="25.png">
-        
-      </div>
-
-      <div class="avis-card">
-        <img src="19.jpg">
-   
-      </div>
-
-      <div class="avis-card">
-        <img src="20.png">
-        
-      </div>
-
-      <div class="avis-card">
-        <img src="21.png">
-     
-      </div>
-
-      <div class="avis-card">
-        <img src="22.png">
-       
-      </div>
-
-      <div class="avis-card">
-        <img src="23.png">
-       
-      </div>
-
-    </div>
-  </div>
-
-</div>
-<style>.avis-section{
-  background:#1b263b;
- 
-  color:#f1c40f;
-  text-align:center;
-}
-
-.avis-wrapper{
-  overflow:hidden;
-  max-width:1000px;
-  margin:auto;
-}
-
-.avis-track{
-  display:flex;
-  animation: scroll 40s linear infinite;
-}
-
-.avis-card{
-  width: calc(80% / 2);   
-  flex-shrink: 0;
-  padding:30px;
-  box-sizing:border-box;
-  text-align:center;
-}
-
-.avis-card img{
-  width:60%;
-
- 
-  margin-bottom:10px;
-}
-
-.avis-card h4{
-  color:#ffd84d;
-  margin:10px 0 5px;
-}
-
-.avis-card p{
-  font-size:14px;
-  opacity:0.9;
-}
-
-
-@keyframes scroll{
-  from{
-    transform:translateX(50%);
-  }
-  to{
-    transform:translateX(-70%);
-  }
-}
-
-
-@media(max-width:768px){
-  .avis-card{
-    width:100%;
-  }
-}
-.avis-card{
-  overflow: visible;
-}
-
-.avis-card img{
-  width:60%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.avis-card img:hover{
-  transform: scale(1.6);   /* ← هنا التكبير */
-  box-shadow: 0 100% 70% rgba(0,0,0,0.5);
-  z-index: 10000;
-}
-
-
-</style>
-
 
 
 <div id="imageModal" style="display:none;position:fixed;z-index:2000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);align-items:center;justify-content:center;">
   <span onclick="closeImagePopup()" style="position:absolute;top:30px;right:40px;font-size:40px;color:#fff;cursor:pointer;">&times;</span>
-  <img src="flyer-0-eau-veso1_page-0001.jpg" alt="Popup" style="max-width:90vw;max-height:80vh;display:block;margin:auto;border-radius:16px;">
+  <img src="flyer-0-eau-veso1_page-0001.webp" alt="Popup" style="max-width:90vw;max-height:80vh;display:block;margin:auto;border-radius:16px;">
 </div>
 
 <div id="phoneModal" style="display:none;position:fixed;z-index:2000;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);align-items:center;justify-content:center;">
@@ -759,45 +855,160 @@ counters.forEach(counter => {
 
   
   </div>
+  <style>
+*{
+  box-sizing: border-box;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+@media(max-width:768px){
+  .hero{
+    padding:20px 15px;
+  }
+
+  .hero-logo{
+    width:120px !important;
+    height:auto !important;
+    margin:0 auto 10px auto !important;
+  }
+
+  .hero-content{
+    max-width:100% !important;
+    margin-top:0 !important;
+  }
+
+  .hero h1{
+    font-size:20px !important;
+  }
+
+  .hero p{
+    font-size:14px;
+  }
+}
+
+@media(max-width:768px){
+  .section{
+    padding:25px 15px;
+  }
+}
+
+
+@media(max-width:768px){
+  .stats-section{
+    flex-direction:column;
+    gap:30px;
+  }
+
+  .stat .number{
+    font-size:36px;
+  }
+}
+
+
+@media(max-width:768px){
+  .avis-card{
+    width:100% !important;
+    padding:15px;
+  }
+
+  .avis-card img{
+    width:85% !important;
+  }
+}
+
+
+@media(max-width:768px){
+  .avis-card img:hover{
+    transform:none;
+    box-shadow:none;
+  }
+}
+
+
+@media(max-width:768px){
+  .ba-main-img{
+    max-width:100% !important;
+    max-height:300px !important;
+  }
+
+  .ba-thumb{
+    width:50px;
+    height:40px;
+  }
+}
+
+
+@media(max-width:768px){
+  .whatsapp-float{
+    width:52px;
+    height:52px;
+    bottom:20px;
+    right:20px;
+  }
+}
+
+
+@media(max-width:768px){
+  .lang-switcher{
+    top:10px;
+    right:10px;
+  }
+
+  .lang-btn{
+    padding:8px 14px;
+    font-size:13px;
+  }
+}
+
+@media (max-width: 768px){
+
+
+  html, body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+
+  .hero-btns{
+    gap:8px;
+  }
+
+  .hero-btns .cta{
+    padding:10px 12px !important;
+    font-size:14px !important;
+    min-width:auto !important;
+  }
+
+
+  .section div[style*="min-width"]{
+    min-width:auto !important;
+    padding:14px 16px !important;
+    font-size:15px !important;
+  }
+
+  /* Green WhatsApp button */
+  button[onclick*="whatsapp"]{
+    padding:14px 18px !important;
+    font-size:17px !important;
+    border-radius:14px !important;
+  }
+
+  button, .cta{
+    max-width:100%;
+    white-space:normal;
+  }
+}
+
+
+</style>
 
   
 
-  <div class="section">
-  <h2 style=" text-align: center;">
-    <span class="ar-text">النتيجة قبل وبعد</span>
-    <span class="fr-text" style="display:none;">Avant et après</span>
-  </h2>
-  <p style="text-align: center;">
-    <span class="ar-text">الفرق واضح بالعين 👀</span>
-    <span class="fr-text" style="display:none;">La différence est visible à l'œil nu 👀</span>
-  </p>
-  <div class="slider-container">
-    <div class="slider-wrapper" id="sliderWrapper">
-      <div class="slider-item">
-        <img src="1.jpg" alt="Image 1" class="ba-main-img" onclick="showMainImage(0)">
-        <img src="5.jpg" alt="Image 2" class="ba-thumb-img" onclick="showMainImage(1)">
-        <img src="2.jpg" alt="Image 3" class="ba-thumb-img" onclick="showMainImage(2)">
-        <img src="3.jpg" alt="Image 4" class="ba-thumb-img" onclick="showMainImage(3)">
-        <img src="4.jpg" alt="Image 5" class="ba-thumb-img" onclick="showMainImage(4)">
-        <img src="27.png" alt="Image 6" class="ba-thumb-img" onclick="showMainImage(5)">
-        <img src="5.jpg" alt="Image 2" class="ba-thumb-img" onclick="showMainImage(6)">
-        
-        
-      </div>
-    </div>
-    <div style="display:flex;justify-content:center;gap:8px;margin-top:18px;flex-wrap:wrap;">
-
-      <img src="1.jpg" alt="Image 1" class="ba-thumb" onclick="showMainImage(0)">
-      <img src="5.jpg" alt="Image 2" class="ba-thumb" onclick="showMainImage(1)">
-      <img src="2.jpg" alt="Image 3" class="ba-thumb" onclick="showMainImage(2)">
-      <img src="3.jpg" alt="Image 4" class="ba-thumb" onclick="showMainImage(3)">
-      <img src="4.jpg" alt="Image 5" class="ba-thumb" onclick="showMainImage(4)">
-      <img src="27.png" alt="Image 6" class="ba-thumb" onclick="showMainImage(5)">
-      <img src="5.jpg" alt="Image 2" class="ba-thumb" onclick="showMainImage(6)">
-        <img src="27.png" alt="Image 7" class="ba-thumb" onclick="showMainImage(7)">
-    </div>
-  </div>
-</div>
+  
 <style>
 .ba-main-img {
   display: block;
@@ -834,14 +1045,14 @@ counters.forEach(counter => {
 </style>
 <script>
 const baImages = [
-  "1.jpg",
-  "5.jpg",
-  "2.jpg",
-  "3.jpg",
-  "4.jpg",
-  "6.png",
-  "5.jpg",
-  "27.png"
+  "1.webp",
+  "5.webp",
+  "2.webp",
+  "3.webp",
+  "4.webp",
+  "6.webp",
+  "5.webp",
+  "27.webp"
 ];
 function showMainImage(idx) {
 
@@ -860,25 +1071,7 @@ window.addEventListener('DOMContentLoaded', () => {
 </script>
 
 
-<div class="section" style="text-align:center;">
-  <h2>
-    <span class="ar-text">📲 بغيت تغسل سيارتك الآن؟</span>
-    <span class="fr-text" style="display:none;">📲 Vous voulez laver votre voiture maintenant ?</span>
-  </h2>
-  <p>
-    <span class="ar-text">راسلنا الآن على واتساب وحدد الموعد الذي يناسبك.</span>
-    <span class="fr-text" style="display:none;">Contactez-nous maintenant sur WhatsApp et choisissez votre créneau.</span>
-  </p>
-  <a 
-    href="https://api.whatsapp.com/send?phone=212604203076&text=سلام، بغيت نحجز دابا غسيل السيارة."
-    class="cta whatsapp"
-    target="_blank"
-  >
-    <span class="ar-text">احجز الآن على واتساب</span>
-    <span class="fr-text" style="display:none;">Réserver sur WhatsApp</span>
-  </a>
 
-  <p style="text-align:center;margin-top:30px;font-size:16px;line-height:1.8;">
 <script>
 let currentLang = 'ar';
 let currentSlideIndex = 0;
